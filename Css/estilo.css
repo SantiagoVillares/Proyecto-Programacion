@@ -47,11 +47,10 @@ body
     width: 250px;
     flex-wrap: nowrap;
 }
-
 .rankings
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #FF1776;
 }
 .slogan
@@ -79,49 +78,10 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.
+.movc
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 2000px;
+}
