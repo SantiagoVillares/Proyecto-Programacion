@@ -51,3 +51,103 @@ body
     flex-direction: column;
     color: #FF1776;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenido
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    width: 380px;
+    justify-content: flex-start;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: white;
+    font: 400 1rem/1.5625rem sans-serif
+    
+}
+.contenido_2
+{
+    
+    flex-direction: column;
+    margin-left: 80px;
+
+}
+.contenido_3
+{ 
+    
+    flex-direction: row;
+    width: 700px;
+    font-size: 20px;
+    margin-top: 200px;
+
+
+}
+.titulo 
+{
+   display: flex;
+   flex-direction: row;
+  color: white;
+  font-size: 60px;
+  font-style: italic;
+  margin-top: 50px;
+
+  
+
+}
