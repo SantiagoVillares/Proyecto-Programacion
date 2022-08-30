@@ -11,6 +11,7 @@ body
     text-decoration: none;
     color: black;
     text-align: right;
+    list-style-type: none;
 }
 .nav-bus
 {
@@ -36,13 +37,15 @@ body
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 100px;
+    margin-left: 120px;
     padding-bottom: 30px;
     
 }
 .log
 {
+    display: flex;
     width: 250px;
+    flex-wrap: nowrap;
 }
 
 .rankings
@@ -51,3 +54,74 @@ body
     flex-direction: column;
     color: #FF1776;
 }
+.slogan
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 50px;
+    font-style: italic;
+    margin-left: 100px;
+    color: #FF1776;
+}
+.sacar
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 380px;
+}
+.movt
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
