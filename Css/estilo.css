@@ -6,11 +6,48 @@ body
 {
     background-color: rgb(22, 22, 71 );
 }
+.a-bus
+{
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
+.nav-bus
+{
+   display:flex;
+   flex-wrap: wrap; 
+   flex-direction: row;
+   justify-content: flex-end;
+   
+}
+.header1
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    
+}
+.logins
+{
+    margin-left: 1.69%;
+}
 .logo
 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    margin-left: 100px;
     padding-bottom: 30px;
+    
+}
+.log
+{
+    width: 250px;
+}
+
+.rankings
+{
+    display: flex;
+    flex-direction: column;
+    color: #FF1776;
 }
