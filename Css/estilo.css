@@ -91,6 +91,24 @@ body
     width: 332px;
     margin-right: 30px;
 }
+.sacaru
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 332px;
+    margin-right: 30px;
+}
+.sacara
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 332px;
+    margin-right: 30px;
+}
 .movt
 {
 display: flex;
