@@ -72,6 +72,24 @@ body
     flex-wrap: nowrap;
     width: 380px;
 }
+.sacare
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 312px;
+    margin-right: 30px;
+}
+.sacari
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 332px;
+    margin-right: 30px;
+}
 .movt
 {
 display: flex;
