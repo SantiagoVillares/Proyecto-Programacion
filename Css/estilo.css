@@ -205,3 +205,13 @@ justify-content: flex-start;
 {
     size: 200px;
 }
+.slogana {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font: 400 1rem/1.5625rem sans-serif;
+    font-size:70px;
+    font-style: italic;
+    margin-left: 100px;
+    color: #FF1776;
+}
