@@ -76,23 +76,23 @@ body
 }
 .narnia
 {
-    width:20% ;
+    width:15% ;
 }
 .qpa
 {
-    width: 20%;
+    width: 15.1%;
 }
 .simpsons
 {
-    width: 23.6%;
+    width: 17.7%;
 }
 .hustle
 {
-    width:19.95% ;
+    width:14.99% ;
 }
 .up
 {
-    width:20% ;
+    width:14.91% ;
 }
 .pkb
 {
@@ -161,6 +161,7 @@ justify-content: flex-start;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .bot
 {
