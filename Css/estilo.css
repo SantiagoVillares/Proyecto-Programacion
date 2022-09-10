@@ -18,20 +18,24 @@ body
    display:flex;
    flex-wrap: wrap; 
    flex-direction: row;
-   justify-content: flex-end;
-   
+   justify-content: flex-end; 
 }
 .header1
 {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
-    
+    list-style: none;  
 }
 .logins
 {
-    margin-left: 1.69%;
-    color: white;
+    margin-left: 20%;
+    color: #FF1776;
+    font-size: 130%;
+}
+.urls
+{
+
 }
 .logo
 {
@@ -39,8 +43,7 @@ body
     flex-wrap: wrap;
     flex-direction: row;
     margin-left: 120px;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px;  
 }
 .log
 {
@@ -110,10 +113,6 @@ body
 {
     width:16.2% ;
 }
-.prb
-{
-    width:16% ;
-}
 .cars
 {
     width:18.2% ;
@@ -134,13 +133,13 @@ body
 {
     width: 15.77%;
 }
-
 .movt
 {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+width: 100%;
 }
 .ter
 {
