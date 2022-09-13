@@ -233,3 +233,25 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
+.part
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.ord
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 5%;
+}
+.h4s
+{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: #FF1776;
+}
