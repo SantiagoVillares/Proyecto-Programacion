@@ -74,6 +74,10 @@ body
     border: solid 6px #FF1776 ;
     transition: transform .2s;
 }
+.amg
+{
+    border-bottom: solid 6px #FF1776 ;
+}
 .sacar:hover
 {
     transform: scale(1.1);
