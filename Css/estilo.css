@@ -228,3 +228,9 @@ width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-small;
 }
+.centrar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
