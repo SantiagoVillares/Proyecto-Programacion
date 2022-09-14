@@ -153,7 +153,7 @@ margin-top: 14vh;
 .lista_serie
 {
     width: 100%;
-    margin-top: ;
+    margin-top: 
 }
 
 .contenido_2
@@ -217,3 +217,33 @@ margin-top: 14vh;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;}
+
+.hiper
+{
+color: #FF1776;
+
+}
+
+.genry
+
+{   color: #FF1776;
+    font: 400 1rem/1.5625rem sans-serif;
+    font-style: italic;
+
+
+
+}
+.Sergen 
+{
+    color:#FF1776 ; 
+    font: 400 1rem/1.5625rem sans-serif;
+    font-style: italic;
+    margin-bottom: 7vh;
+    font-size: 300%;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    text-align: center;
+
+
+}
+
+
