@@ -135,37 +135,38 @@ margin-top: 14vh;
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 100vw;
     justify-content: flex-start;
-    margin-left: 3vw;
-    margin-top: 50px;
     color: white;
     font-family: 400 1rem/1.5625rem sans-serif
 }
 .bloque_izq
 {
-    width: 30vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-left: 2vw;
+    margin-top: 5vh;
 
+}
+.bloque_der
+{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 2vw;
+    margin-top: 5vh;
 }
 .lista_serie
 {
     width: 100%;
-<<<<<<< HEAD
-    margin-top: 
-=======
-    
->>>>>>> 52866060029f3ad1ebe4a5c6dcf6cd602d1dbfa3
 }
 
 .contenido_2
 {
     flex-direction: column;
-    margin-left: 10vw;
-    margin-top: 3vh;
 }
 .contenido_3
 {   
