@@ -189,13 +189,27 @@ width: 100%;
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
-    width: 380px;
+    width: 100%;
     justify-content: flex-start;
     margin-left: 100px;
     margin-top: 50px;
     color: white;
     font-family: 400 1rem/1.5625rem sans-serif
 }
+.bloque_izq
+{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+.lista_serie
+{
+    width: 100%;
+    margin-top: 2px;
+}
+
 .contenido_2
 {
     flex-direction: column;
