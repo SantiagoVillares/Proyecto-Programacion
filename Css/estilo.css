@@ -29,10 +29,10 @@ body
     justify-content: center;
     list-style: none;  
     background-color: #24247E;
-    background-size: 99%;
+    background-size: 100%;
     border-radius: 15px;
     border:15px solid #24247E ;
-    width: 99%;
+    width: 98vw;
 }
 .logins
 {
@@ -51,13 +51,14 @@ body
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    margin-left: 120px;
-    padding-bottom: 30px;  
+    margin-left: 7vw;  
+    height: 40vh;
+    margin-top: 5vh;
 }
 .log
 {
     display: flex;
-    width: 20%;
+    width: 17vw;
     flex-wrap: nowrap;
 }
 .slogan
@@ -68,7 +69,7 @@ body
     font: 400 1rem/1.5625rem sans-serif;
     font-size:90px;
     font-style: italic;
-    margin-left: 100px;
+    margin-left: 5vw;
     color: #FF1776;
 }
 .rankings
@@ -84,54 +85,45 @@ body
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 20px;
     transition: transform .2s;
-    width: 15vw;
+    width: 16vw;
     height: 60vh;
+}
+.sacar:hover
+{
+    transform: scale(1.1);
 }
 .amg
 {
     border: solid 6px #FF1776 ;
     border-radius: 15px;
     width: 100%;
-    height: 80%;
+    height: 85%;
 }
-.sacar:hover
-{
-    transform: scale(1.1);
-}
-
 .menu
 {
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 justify-content: center;
-width: 100%;
-}
-.L
-{
-    margin-top: 5%;
-}
-.xl
-{
-    margin-top: 9%;
+width: 98vw;
+margin-top: 14vh;
 }
 .titulos_seccion
 {
+    text-align: center;
     color: #FF1776;
     font: 400 1rem/1.5625rem sans-serif;
+    margin-bottom: 7vh;
     font-size: 300%;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
 }
-
 .botones_titulos
 {
     color: white;
-    padding-right: 0px;
-    margin-right: 0px;
     text-decoration: none;
     text-align: center;
+    font: 400 1rem/1.5625rem sans-serif;
 }
 .contenido
 {
