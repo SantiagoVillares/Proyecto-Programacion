@@ -255,3 +255,12 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: center; 
 }
+.movc{
+    background-color: #FF1776;
+}
+.same{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
