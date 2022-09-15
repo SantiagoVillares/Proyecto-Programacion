@@ -236,6 +236,7 @@ color: #FF1776;
 display: flex;
 justify-content: center;
 flex-direction: column;
+
 }
 .genry
 
@@ -268,6 +269,23 @@ flex-direction: column;
    width: 16vw;
     height: 60vh;
 }
+.letra 
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font: 400 1rem/1.5625rem sans-serif;
 
+
+}
+
+.cantry
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
 
 
