@@ -161,7 +161,28 @@ margin-top: 14vh;
 .calif
 {
     margin-top: 1vh;
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
 }
+.estrellita
+{
+    display: none;
+}
+label
+{
+    display: inline-block;
+    color: gray;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+input:checked ~ label,
+input:hover ~ label
+{
+    color: #FF1776;
+}
+
 .tuki
 {
     border:solid 6px #FF1776;
