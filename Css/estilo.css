@@ -94,7 +94,7 @@ body
     width: 16vw;
     height: 60vh;
 }
-.elementos_hijos :hover
+.elementos_hijos:hover
 {
     transform: scale(1.1);
 }
@@ -159,6 +159,11 @@ margin-top: 14vh;
     width: 98vw;
     height: 110vh;
     margin-top: 14vh;
+    background-image: url(../Imagenes/fondo\ movie\ -\ Editado.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 15px;
+    border: solid 6px #161647;
 }
 .cont_izq_serie
 {
@@ -198,7 +203,7 @@ margin-top: 14vh;
     width: 60%;
     height: 90%;
     margin-right: 4vw;
-    color: #FF1776;
+    color: whitesmoke;
     margin-top: 5vh;
 }
 .calif
@@ -226,7 +231,7 @@ input:hover ~ label
     color: #FF1776;
 }
 
-.tuki
+.foto_detalle
 {
     border:solid 6px #FF1776;
     border-radius: 15px;
@@ -256,20 +261,6 @@ input:hover ~ label
 {
     margin-left: 13vw;
     
-}
-.slogana {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font: 400 1rem/1.5625rem sans-serif;
-    font-size:70px;
-    font-style: italic;
-    margin-left: 100px;
-    color: #FF1776;
-}
-.letraf{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-small;
 }
 .centrar{
     display: flex;
