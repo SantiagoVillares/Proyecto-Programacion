@@ -130,7 +130,19 @@ margin-top: 14vh;
 {
     height: 85%;
 }
-.cont_gen
+.cont_gen_serie
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 98vw;
+    height: 110vh;
+    margin-top: 14vh;
+    background-image: url(../Imagenes/prison-break.jpeg);
+}
+
+.cont_gen_movie
 {
     display: flex;
     flex-direction: row;
@@ -147,16 +159,17 @@ margin-top: 14vh;
     flex-wrap: wrap;
     width: 30%;
     height: 80%;
-    margin-left: 1vw;
+    margin-left: 1vw
 }
-.cont_der
+.cont_der_serie
 {
     flex-direction: column;
     display: flex;
     width: 60%;
     height: 90%;
     margin-right: 4vw;
-    color: white;
+    color: #FF1776;
+    margin-top: 5vh;
 }
 .calif
 {
