@@ -135,6 +135,22 @@ margin-top: 14vh;
 {
     height: 85%;
 }
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #24247E;
+    width: 98vw;
+    height: 20vh;
+    border-radius: 15px;
+    color: #FF1776;
+    font: 400 1rem/1.5625rem sans-serif;
+}
+.nombres
+{
+    margin: 60px;
+}
 .cont_gen_serie
 {
     display: flex;
