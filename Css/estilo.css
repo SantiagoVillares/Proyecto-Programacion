@@ -72,7 +72,7 @@ body
     margin-left: 5vw;
     color: #FF1776;
 }
-.rankings
+.lista_elementos
 {
     display: flex;
     flex-wrap: wrap;
