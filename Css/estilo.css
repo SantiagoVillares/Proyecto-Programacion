@@ -257,8 +257,9 @@ color: #FF1776;
 .cont
 {
 display: flex;
-justify-content: center;
-flex-direction: column;
+justify-content:flex-start;
+flex-direction: row;
+
 
 }
 .genry
@@ -317,5 +318,19 @@ flex-direction: column;
     justify-content: center;
     
 }
+.cajaizq 
+{
+    background-color: #FF1776;
+    display: flex;
+    width:50vw;
+    height: 80vw;
+    
+}
 
-
+.cajader
+{
+    background-color: black;
+    display: flex;
+    width: 50vw;
+    height: 80vw;
+}
