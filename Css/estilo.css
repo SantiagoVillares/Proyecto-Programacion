@@ -183,7 +183,8 @@ margin-top: 14vh;
     height: 90%;
     margin-right: 4vw;
     color: #FF1776;
-    margin-top: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 4px;
 }
 .cont_der_movie
 {
@@ -244,6 +245,7 @@ input:hover ~ label
     font-family: 'Cinzel', serif;
     display: flex;
     flex-direction: row;
+    
 }
 .trailer
 {
