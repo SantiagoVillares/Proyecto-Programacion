@@ -199,7 +199,8 @@ footer
     flex-wrap: wrap;
     width: 30%;
     height: 80%;
-    margin-left: 1vw
+    margin-left: 1vw;
+    margin-top: 5vh;
 }
 .cont_der_serie
 {
