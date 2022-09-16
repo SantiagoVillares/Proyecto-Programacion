@@ -79,7 +79,7 @@ body
     flex-direction: row;
     justify-content: space-between;
 }
-.sacar
+.elementos_hijos
 {
     list-style-type: none;
     display: flex;
@@ -89,7 +89,7 @@ body
     width: 16vw;
     height: 60vh;
 }
-.sacar:hover
+.elementos_hijos :hover
 {
     transform: scale(1.1);
 }
@@ -137,11 +137,14 @@ margin-top: 14vh;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 98vw;
-    height: 110vh;
+    height: 100h;
     margin-top: 14vh;
-    background-image: url(../Imagenes/prison-break.jpeg);
+    background-image: url(../Imagenes/Captura\ de\ Pantalla\ 2022-09-16\ a\ la\(s\)\ 11.23.48.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 15px;
+    border: solid 6px #161647;
 }
-
 .cont_gen_movie
 {
     display: flex;
@@ -152,7 +155,18 @@ margin-top: 14vh;
     height: 110vh;
     margin-top: 14vh;
 }
-.cont_izq
+.cont_izq_serie
+{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 80%;
+    margin-left: 1vw;
+    margin-top: 5vh;
+
+}
+.cont_izq_movie
 {
     flex-direction: column;
     display: flex;
@@ -162,6 +176,16 @@ margin-top: 14vh;
     margin-left: 1vw
 }
 .cont_der_serie
+{
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+    height: 90%;
+    margin-right: 4vw;
+    color: #FF1776;
+    margin-top: 5vh;
+}
+.cont_der_movie
 {
     flex-direction: column;
     display: flex;
