@@ -274,10 +274,11 @@ flex-direction: column;
     color:#FF1776 ; 
     font: 400 1rem/1.5625rem sans-serif;
     font-style: italic;
-    margin-bottom: 7vh;
+    margin-bottom: 3vh;
     font-size: 300%;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
-    text-align: center;
+    text-align:left;
+    margin-left: 15vh;
 
 
 }
@@ -290,6 +291,11 @@ flex-direction: column;
    width: 16vw;
     height: 60vh;
 }
+.sacare:hover 
+{
+    transform: scale(1.1);
+}
+
 .letra 
 {
     color: white;
