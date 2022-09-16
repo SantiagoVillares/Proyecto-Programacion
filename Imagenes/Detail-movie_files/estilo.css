@@ -205,8 +205,6 @@ input:hover ~ label
     font-size: 22px;
     margin-left: 11vw;
     font-family: 'Cinzel', serif;
-    display: flex;
-    flex-direction: row;
 }
 .trailer
 {
