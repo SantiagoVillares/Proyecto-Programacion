@@ -19,6 +19,11 @@ body
     border-radius: 20px;
     outline: none;
 }
+.urls
+{
+    color: #FF1776;
+    text-decoration: none;
+}
 .buscador_
 {
     height: 30px;
