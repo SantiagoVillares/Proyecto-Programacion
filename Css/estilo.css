@@ -388,3 +388,12 @@ margin-top: 5vh;
     height: 80vw;
     flex-direction: column;
 }
+.com
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #24247E;
+    border-radius: 15px;
+
+}
