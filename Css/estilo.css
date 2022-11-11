@@ -130,6 +130,7 @@ margin-top: 14vh;
     text-decoration: none;
     text-align: center;
     font: 400 1rem/1.5625rem sans-serif;
+    font-size: 15px;
 }
 .cartelera
 {
@@ -247,7 +248,6 @@ input:hover ~ label
 {
     color: #FF1776;
 }
-
 .foto_detalle
 {
     border:solid 6px #FF1776;
@@ -271,40 +271,11 @@ input:hover ~ label
     margin-left: 11vw;
     font-family: 'Cinzel', serif;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 .trailer
 {
     margin-left: 13vw;
-    
-}
-.centrar{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.part
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; 
-}
-.movc{
-    background-color: #FF1776;
-}
-.same{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;}
-
-.hiper
-{
-color: #FF1776;
-
 }
 .cont
 {
@@ -312,10 +283,8 @@ display: flex;
 justify-content:flex-start;
 flex-direction: row;
 margin-top: 5vh;
-
 }
-.genry
-
+.lista_genero
 {   color: #FF1776;
     font: 400 1rem/1.5625rem sans-serif;
     font-style: italic;
@@ -324,7 +293,7 @@ margin-top: 5vh;
     flex-direction: row;
     justify-items: center;
 }
-.Sergen 
+.genero_serie
 {
     color:#FF1776 ; 
     font: 400 1rem/1.5625rem sans-serif;
@@ -351,7 +320,6 @@ margin-top: 5vh;
 {
     transform: scale(1.1);
 }
-
 .letra 
 {
     color: white;
@@ -361,8 +329,7 @@ margin-top: 5vh;
 
 
 }
-
-.cantry
+.lista_des
 {
     display: flex;
     flex-wrap: wrap;
@@ -379,7 +346,6 @@ margin-top: 5vh;
     flex-direction: column;
     border-right:solid 6px #FF1776;
 }
-
 .cajader
 {
     
@@ -397,10 +363,146 @@ margin-top: 5vh;
     border-radius: 15px;
 
 }
-
-
 .boton_peli
 {
     width: 100%;
     height: 100%;
+}
+@media(max-width: 320px)
+{
+    .ult
+    {
+        display: none
+    }
+    .ante
+    {
+        display: none
+    }
+    .pen
+    {
+        display: none
+    }
+    .header1
+    {
+        display: flex;
+        width: 30vw;
+        flex-direction: column;
+        align-items: center;
+        background-size: 30%;
+    }
+    .logo
+    {
+        width: 50vw;
+        align-items: center;
+    }
+    .slogan
+    {
+        display: none;
+    }
+    .log
+    {
+        width: 60vw;
+    }
+    .titulos_seccion
+    {
+        font-size: 150%;
+    }
+    footer
+    {
+        display: flex;
+        width: 30vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nombres
+    {
+        
+        font-size: 10px;
+        margin: 5px;
+    }
+    .logins
+    {
+        font-size: 50%;
+        width: 30vw;
+    }
+    .buscador_
+    {
+        height: 15px;
+    }
+    .buscador input
+    {
+        font-size:10px ;
+        width: 30vw;
+    }
+    .lista_elementos
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .elementos_hijos
+    {
+        
+        margin-right: 1vw;
+        height: 40vh;
+        width: 30vw;
+    }
+    .botones_titulos
+    {
+        font-size: 3px;
+    }
+    .lista_des
+    {
+        flex-direction: column;
+    }
+}
+@media(max-width: 1000px)
+{
+    .ult
+    {
+        display: none
+    }
+    .slogan
+    {
+        font-size: 75px;
+    }
+    .lista_elementos
+    {
+    justify-content: center;
+    }
+    .elementos_hijos
+    {
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .botones_titulos
+    {
+        font-size: 10px;
+    }
+    .header1
+    {
+        width: 95vw;
+    }
+    footer
+    {
+        width: 95vw;
+    }
+    .info
+    {
+        font-size:12px ;
+    }
+    .ulty
+    {
+        display: none
+    }
+    .cont
+    {
+       margin-bottom: 16vh; 
+    }
+}
+@media(max-width: 1300px)
+{
+    .ulty
+    {
+        display: none
+    }
 }
