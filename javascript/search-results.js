@@ -16,7 +16,7 @@ fetch(url)
         let informacion= document.querySelector(".resultados")
         let container= document.querySelector('.res_busq');
         if (data.results.length==0){
-            informacion.innerHTML+=`La busqueda ${busqueda} no dio ningun resultado`
+            informacion.innerHTML+=`La busqueda ${busqueda} no encontro ningun resultado`
         })
         else{
             for(let i=0;i<data.results.length;i++){
