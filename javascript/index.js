@@ -60,3 +60,21 @@ fetch(agre_elementos_peli)
     .catch(function(error){
         console.log(error)
     })
+
+fetch(agre_elementos_tv)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data)
+        let informacion1 =data.results;
+        let container1= document.querySelector('.lista_elementos_2');
+        let show= " ";
+        for (let i=0; i<informacion1.length;i++){
+            show+= `<li class="elementos_hijos">
+                        <a class="boton_peli" href="./detail-movie.html"><img class="amg" src="https://image.tmdb.org/t/p/w500/${informacion1[i].poster_path}" alt="Error" /></a>
+                        <a class="botones_titulos" href="./detail-movie.html"><p>${informacion1[i].name}</p></a>
+                    </li>`
+        }
+        container1.innerHTML=show
+    })
