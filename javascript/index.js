@@ -1,5 +1,7 @@
 //formularios
 let url=  `https://api.themoviedb.org/3/movie/76341?api_key=2a3601e42fea0b8cec36fb4c1999c023&query=null`
+let agre_elementos_peli= `https://api.themoviedb.org/3/movie/popular?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&page=1`
+let agre_elementos_tv= `https://api.themoviedb.org/3/tv/popular?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&page=1`
 fetch(url)
     .then(function(response){
         return response.json();
@@ -37,4 +39,24 @@ fetch(url)
         console.log(error);
     })
 
-
+//armando el home
+fetch(agre_elementos_peli)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data)
+        let informacion=data.results;
+        let container= document.querySelector('.lista_elementos_1');
+        let pelicula= '';
+        for(let i=0;i<informacion.length;i++){
+            pelicula += `<li class="elementos_hijos">
+                            <a class="boton_peli" href="./detail-movie.html"><img class="amg" src="https://image.tmdb.org/t/p/w500/${informacion[i].poster_path}" alt="Error" /></a>
+                            <a class="botones_titulos" href="./detail-movie.html"><p>${informacion[i].title}</p></a>
+                        </li>`
+        }
+        container.innerHTML= pelicula
+    })
+    .catch(function(error){
+        console.log(error)
+    })
