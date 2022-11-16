@@ -84,6 +84,13 @@ body
     flex-direction: row;
     justify-content: space-between;
 }
+.lista_elementos_1
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .elementos_hijos
 {
     list-style-type: none;
