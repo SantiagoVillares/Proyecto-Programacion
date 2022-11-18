@@ -20,7 +20,9 @@ fetch(url_posta)
         let contenedor_2=""
         contenedor_1+=`<h1 class="titulo">${detalles.title}</h1>
                         <img class="foto_detalles" src=https://image.tmdb.org/t/p/w500/${detalles.poster_path} alt="Error"/>
-                        <h2 class="slogan_txt">${detalles.tagline}</h2>`
+                        <h2 class="slogan_txt">${detalles.tagline}</h2>
+                        <button class="slogan_txt">Favorito</button>`
+                        
 
         contenedor_2+=`<h2 class="subtitulo">Datos Importantes</h2>
                         <h2 class="subtitulo">Resumen</h2>
