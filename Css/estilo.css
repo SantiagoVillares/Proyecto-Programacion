@@ -6,6 +6,46 @@ body
 {
     background-color: #161647;
 }
+.contenedor_general{
+    display: flex;
+    flex-direction: row;
+    height: 150vh;
+    border-radius: 15px;
+    border: solid 6px #161647;
+
+}
+.izq{
+    
+    height: 85%;
+    width: 30%;
+    margin-right: 5vw;
+    margin-top:7vh ;
+    margin-left: 3vw;
+    border-radius: 15px;
+    
+}
+.der{
+    
+    height: 85%;
+    width: 50%;
+    margin-top:7vh ;
+    border-radius: 15px;
+    
+
+}
+.foto_detalles{
+    border:solid 6px #FF1776;
+    border-radius: 15px;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin-left: 5%;
+}
+.slogan_txt{
+    color: #FF1776;
+    font-family: 'Sono', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
 .buscador
 {
    margin-right: 3%;
@@ -97,6 +137,7 @@ body
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 .elementos_hijos
 {
@@ -107,6 +148,7 @@ body
     transition: transform .2s;
     width: 16vw;
     height: 60vh;
+    margin-bottom: 3vh;
 }
 .elementos_hijos:hover
 {
@@ -175,7 +217,7 @@ footer
     width: 98vw;
     height: 100h;
     margin-top: 14vh;
-    background-image: url(../Imagenes/Captura\ de\ Pantalla\ 2022-09-16\ a\ la\(s\)\ 11.23.48.png);
+    background-image: url(https://image.tmdb.org/t/p/w500//bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 15px;
@@ -273,11 +315,31 @@ input:hover ~ label
 {
     display: flex;
     flex-direction: row;
-    font-size: 60px;
+    font-size: 50px;
     font-style: italic;
-    margin-left: 11vw;
+    margin-left:2.5vw;
     margin-top: 0vh;
-    font-family:'Cinzel', serif;
+    font-family: 'Sono', sans-serif;
+    font-weight: 500;
+    color: #FF1776;
+}
+.subtitulo{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    font-style: italic;
+    margin-left:2.5vw;
+    margin-top: 12vh;
+    font-family: 'Sono', sans-serif;
+    font-weight: 400;
+    color: #FF1776;
+}
+.txt{
+    margin-left: 2.5vw;
+    font-family: 'Sono', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
 }
 .info
 {

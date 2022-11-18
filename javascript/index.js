@@ -26,7 +26,7 @@ fetch(url)
         let pelicula_1= '';
         for(let i=0;i<informacion.length;i++){
             pelicula_1 += `<article>
-                            <img src=${informacion[i].poster_path} alt="Error" />
+                            <img src=https://image.tmdb.org/t/p/w500/${informacion[i].poster_path} alt="Error" />
                             <a href='detalle.html?id=${informacion[i].title}'>${informacion[i].title}</a>
                             <p> Fecha de estreno: ${informacion[i].release_date}</p>
                         </article>`
@@ -74,7 +74,9 @@ fetch(agre_elementos_tv)
             show+= `<li class="elementos_hijos">
                         <a class="boton_peli" href="./detail-movie.html"><img class="amg" src="https://image.tmdb.org/t/p/w500/${informacion1[i].poster_path}" alt="Error" /></a>
                         <a class="botones_titulos" href="./detail-movie.html"><p>${informacion1[i].name}</p></a>
+                        
                     </li>`
         }
+        console.log(show)
         container1.innerHTML=show
     })
