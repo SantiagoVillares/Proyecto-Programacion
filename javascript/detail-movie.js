@@ -1,7 +1,6 @@
 let qs= location.search;
-let qsto= new URLSearchParams(qs)
+let qsto= new URLSearchParams(qs);
 let id= qsto.get("id");
-let url_prueba=`https://api.themoviedb.org/3/movie/436270?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
 let url_posta=`https://api.themoviedb.org/3/movie/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
 
 fetch(url_posta)
@@ -34,5 +33,8 @@ fetch(url_posta)
                         `
         izq.innerHTML=contenedor_1;
         der.innerHTML=contenedor_2;
+    })
+    .catch(function(error){
+        console.log(error)
     })
     
