@@ -44,4 +44,10 @@ fetch(agre_elementos_tv)
         console.log(show)
         container1.innerHTML=show
     })
+
+
     
+    function login(){
+       let user=document.getElementById("usuario").value;
+       let pass=document.getElementById("contraseña").value;
+    }
