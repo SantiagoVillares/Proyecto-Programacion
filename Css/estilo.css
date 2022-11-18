@@ -78,6 +78,11 @@ body
     font-size: 18px;
 }
 /*Fin css detalles de serie y peliculas*/
+/*Comienzo css index*/
+.estrenos{
+    color: white;
+    text-align: center;
+}
 .buscador
 {
    margin-right: 3%;
@@ -180,7 +185,7 @@ body
     transition: transform .2s;
     width: 16vw;
     height: 60vh;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
 }
 .elementos_hijos:hover
 {
