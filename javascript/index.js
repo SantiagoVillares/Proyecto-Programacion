@@ -37,12 +37,11 @@ fetch(agre_elementos_tv)
         for (let i=0; i<informacion1.length;i++){
             show+= `<li class="elementos_hijos">
                         <a class="boton_peli" href="./detail-serie.html?id=${informacion1[i].id}"><img class="amg" src="https://image.tmdb.org/t/p/w500/${informacion1[i].poster_path}" alt="Error" /></a>
-                        <a class="botones_titulos" href="./detail-movie.html"><p>${informacion1[i].name}</p></a>
+                        <a class="botones_titulos" href="./detail-serie.html?id=${informacion1[i].id}"><p>${informacion1[i].name}</p></a>
                         
                     </li>`
         }
         console.log(show)
         container1.innerHTML=show
     })
-
-
+    
