@@ -32,8 +32,6 @@ body
     width: 50%;
     margin-top:7vh ;
     border-radius: 15px;
-    
-
 }
 .foto_detalles{
     border:solid 6px #FF1776;
@@ -79,6 +77,78 @@ body
     font-size: 18px;
 }
 /*Fin css detalles de serie y peliculas*/
+/*Comienzo css index*/
+.estrenos{
+    color: white;
+    text-align: center;
+}
+.menu
+{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+width: 98vw;
+margin-top: 14vh;
+}
+.lista_elementos_1
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lista_elementos_2
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.elementos_hijos
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    transition: transform .2s;
+    width: 16vw;
+    height: 60vh;
+    margin-bottom: 10vh;
+}
+.elementos_hijos:hover
+{
+    transform: scale(1.1);
+}
+.amg
+{
+    border: solid 6px #FF1776 ;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.titulos_seccion
+{
+    text-align: center;
+    color: #FF1776;
+    font: 400 1rem/1.5625rem sans-serif;
+    margin-bottom: 7vh;
+    font-size: 300%;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+}
+.botones_titulos
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font: 400 1rem/1.5625rem sans-serif;
+    font-size: 15px;
+}
+
+/*Fin css index*/
 .buscador
 {
    margin-right: 3%;
@@ -149,81 +219,6 @@ body
     font-style: italic;
     margin-left: 5vw;
     color: #FF1776;
-}
-.lista_elementos
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.lista_elementos_1
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.lista_elementos_2
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-.elementos_hijos
-{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    transition: transform .2s;
-    width: 16vw;
-    height: 60vh;
-    margin-bottom: 3vh;
-}
-.elementos_hijos:hover
-{
-    transform: scale(1.1);
-}
-.amg
-{
-    border: solid 6px #FF1776 ;
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-   
-}
-.menu
-{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: center;
-width: 98vw;
-margin-top: 14vh;
-}
-.titulos_seccion
-{
-    text-align: center;
-    color: #FF1776;
-    font: 400 1rem/1.5625rem sans-serif;
-    margin-bottom: 7vh;
-    font-size: 300%;
-    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
-}
-.botones_titulos
-{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font: 400 1rem/1.5625rem sans-serif;
-    font-size: 15px;
-}
-.cartelera
-{
-    height: 85%;
 }
 footer
 {

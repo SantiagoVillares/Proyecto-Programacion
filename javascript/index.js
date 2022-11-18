@@ -16,7 +16,8 @@ fetch(agre_elementos_peli)
         for(let i=0;i<informacion.length;i++){
             pelicula += `<li class="elementos_hijos">
                             <a class="boton_peli" href="./detail-movie.html?id=${informacion[i].id}"><img class="amg" src="https://image.tmdb.org/t/p/w500/${informacion[i].poster_path}" alt="Error" /></a>
-                            <a class="botones_titulos" href="./detail-movie.html"><p>${informacion[i].title}</p></a>
+                            <a class="botones_titulos" href="./detail-movie.html?id=${informacion[i].id}"><p>${informacion[i].title}</p></a>
+                            <p class="estrenos">Fecha de estreno: ${informacion[i].release_date}</p>
                         </li>`
         }
         container.innerHTML= pelicula
@@ -38,7 +39,7 @@ fetch(agre_elementos_tv)
             show+= `<li class="elementos_hijos">
                         <a class="boton_peli" href="./detail-serie.html?id=${informacion1[i].id}"><img class="amg" src="https://image.tmdb.org/t/p/w500/${informacion1[i].poster_path}" alt="Error" /></a>
                         <a class="botones_titulos" href="./detail-serie.html?id=${informacion1[i].id}"><p>${informacion1[i].name}</p></a>
-                        
+                        <p class="estrenos">Fecha de estreno: ${informacion1[i].first_air_date}</p>
                     </li>`
         }
         console.log(show)

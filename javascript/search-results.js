@@ -32,7 +32,6 @@ fetch(url)
         console.log(error);
     })
 
-
     fetch(url2)
     .then(function(response){
         return response.json();
@@ -59,3 +58,4 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
+
