@@ -31,31 +31,3 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
-
-
-    fetch(url2)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        console.log(data);
-        let info = data.results
-        let container = document.querySelector('.elementos_hijos');
-        let characters = '';
-
-        for(let i=0; i<info.length; i++){
-            characters += `<article>
-                                <a href="./detail-serie.html?id=${info[i].id}">
-                                    <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="poster path movie">
-                                    <p>Name: ${info[i].title}</p>
-                                </a>
-                            </article>`
-        }
-        container.innerHTML = characters;
-
-        
-    })
-        
-    .catch(function(error){
-        console.log(error);
-    })
