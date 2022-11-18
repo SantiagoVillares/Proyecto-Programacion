@@ -21,7 +21,7 @@ fetch(url_posta)
         contenedor_1+=`<h1 class="titulo">${detalles.title}</h1>
                         <img class="foto_detalles" src=https://image.tmdb.org/t/p/w500/${detalles.poster_path} alt="Error"/>
                         <h2 class="slogan_txt">${detalles.tagline}</h2>
-                        <button class="slogan_txt">Favorito</button>`
+                       `
                         
 
         contenedor_2+=`<h2 class="subtitulo">Datos Importantes</h2>
@@ -35,7 +35,22 @@ fetch(url_posta)
                         `
         izq.innerHTML=contenedor_1;
         der.innerHTML=contenedor_2;
+        
+        let botonFavorites = document.getElementById("botonFavorites");
+    botonFavorites.addEventListener("click", () => agregarFavorito());
+
+    let peliculas = {
+        id: `${detalles.id}`,
+        titulo: `${detalles.titulo}`,
+        imagenUrl: `${detalles.poster_path}`,
+      };
+  
+      function agregarFavorito() {
+        localStorage.setItem("id", JSON.stringify(peliculas));
+      }
     })
+   
+    
     .catch(function(error){
         console.log(error)
     })
