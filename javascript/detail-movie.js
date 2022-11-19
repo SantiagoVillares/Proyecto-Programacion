@@ -35,19 +35,30 @@ fetch(url_posta)
                         `
         izq.innerHTML=contenedor_1;
         der.innerHTML=contenedor_2;
+
+
+        let arr = JSON.parse(localStorage.getItem("id"));
+        console.log(arr);
+        if (arr == null) arr = [];
+    
+        
+    
+        let peliculas = {
+          id: `${detalles.id}`,
+          titulo: `${detalles.title}`,
+          imagenUrl: `${detalles.poster_path}`,
+        };
+    
+        arr.push(peliculas);
         
         let botonFavorites = document.getElementById("botonFavorites");
     botonFavorites.addEventListener("click", () => agregarFavorito());
 
-    let peliculas = {
-        id: `${detalles.id}`,
-        titulo: `${detalles.titulo}`,
-        imagenUrl: `${detalles.poster_path}`,
-      };
-  
-      function agregarFavorito() {
-        localStorage.setItem("id", JSON.stringify(peliculas));
-      }
+   
+
+    function agregarFavorito() {
+      localStorage.setItem("id", JSON.stringify(arr));
+    }
     })
    
     
