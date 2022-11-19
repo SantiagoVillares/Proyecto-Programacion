@@ -149,6 +149,29 @@ margin-top: 14vh;
 }
 
 /*Fin css index*/
+
+/*Inicio Css busqueda*/
+.lista_elementos_3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lista_elementos_4{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.titulos_seccion_busqueda{
+    text-align: center;
+    color: #FF1776;
+    font: 400 1rem/1.5625rem sans-serif;
+    margin-bottom: 7vh;
+    font-size: 300%;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+}
+/*Fin Css busqueda*/
 .buscador
 {
    margin-right: 3%;

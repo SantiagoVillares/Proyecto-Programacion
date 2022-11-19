@@ -14,9 +14,9 @@ fetch(url)
     .then(function(data){
         console.log(data);
         let info = data.results
-        let container = document.querySelector('.lista_elementos_1');
+        let container = document.querySelector('.lista_elementos_3');
         let characters = '';
-        let titulo= document.querySelector('.titulos_seccion');
+        let titulo= document.querySelector('.titulos_seccion_busqueda');
         let factos= 'Se busco: ';
         let final= factos + `${aBuscar}`
         titulo.innerHTML = final
@@ -43,7 +43,7 @@ fetch(url)
     .then(function(data){
         console.log(data);
         let info = data.results
-        let container = document.querySelector('.lista_elementos_2');
+        let container = document.querySelector('.lista_elementos_4');
         let characters = '';
 
         for(let i=0; i<info.length; i++){
