@@ -1,28 +1,34 @@
-window.addEventListener("load", function () {
-    let peliculasGuardadas = JSON.parse(localStorage.getItem("id"));
-    console.log(peliculasGuardadas);
-  
-    let container = document.querySelector(".lista_Des");
-   
-    let qs= location.search;
-    let qsto= new URLSearchParams(qs);
-    let id= qsto.get("id");
-    let url_posta=`https://api.themoviedb.org/3/movie/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
+let storagenuevo = localStorage.getItem('favoritos');
+console.log(storagenuevo)
 
-    fetch(url_posta)
-        .then(function(response){
-            return response.json();
+let elegido = JSON.parse(storagenuevo);
+console.log(elegido);
+
+let escribir= document.querySelector('.lista_des')
+
+if (elegido == null || elegido.length==0){
+    escribir.innerHTML= `<h1> No hay Favoritos</h1>`
+} else {
+    for (let i=0; i<elegido.length; i++ ){
+        muestraFav(elegido[i])
+    }
+}
+function muestraFav (id){
+    let url = `https://api.themoviedb.org/3/movie/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
+
+    fetch (url)
+    .then(function(response){
+        return response.json();
     })
-        .then(function(detalles){
-            console.log(detalles)
-            let todo= ''
-            todo+= ` <li class="listaf">
-                         <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src=" https://image.tmdb.org/t/p/w500${peliculasGuardadas[0].imagenUrl}" alt=""></a>
-                         <a class="botones_titulos"href="./detail-serie.html"><h2> ${peliculasGuardadas[0].titulo}</h2></a>
-                     </li> `
+    .then(function(data){
+        console.log(data);
+        escribir.innerHTML += ` <li class="listaf">
+                                     <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src=" ${data.imagen_Url}" alt=""></a>
+                                     <a class="botones_titulos"href="./detail-serie.html"><h2> ${data.title}</h2></a>
+                                </li>`
+    })
+    .catch(function(e){
+        console.log(e);
+    })
 
-        })
-        .catch(function(e){
-            console.log(e)
-        })    
-})
+}

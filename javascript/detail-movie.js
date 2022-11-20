@@ -64,3 +64,4 @@ link.addEventListener('click', function(e){
     localStorage.setItem('favoritos', pelisfav);
     console.log(localStorage)
 })
+
