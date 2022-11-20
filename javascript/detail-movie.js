@@ -43,11 +43,8 @@ fetch(url_posta)
     
         
     
-        let peliculas = {
-          id: `${detalles.id}`,
-          titulo: `${detalles.title}`,
-          imagenUrl: `${detalles.poster_path}`,
-        };
+        let peliculas = [`${detalles.id}`]
+         
     
         arr.push(peliculas);
         
