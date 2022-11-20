@@ -54,11 +54,11 @@ link.addEventListener('click', function(e){
     if (favoritos.includes(id)){
         let indice = favoritos.indexOf(id);
         favoritos.splice(indice, 1);
-        link.innerText="Agregar a favoritos"
+        link.innerText="AGREGAR A FAVORITOS"
     } else {
         favoritos.push(id);
         console.log(favoritos)
-        link.innerText="sacar de favoritos"
+        link.innerText="ELIMINAR DE FAVORITOS"
     }
     let pelisfav= JSON.stringify(favoritos);
     localStorage.setItem('favoritos', pelisfav);
