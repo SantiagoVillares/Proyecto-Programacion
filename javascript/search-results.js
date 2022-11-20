@@ -20,13 +20,20 @@ fetch(url)
         let factos= 'Se busco: ';
         let final= factos + `${aBuscar}`
         titulo.innerHTML = final
+        if(data.results.lenght==0){
+            container.innerHTML `no hay resultado para su búsqueda`
+        }
+
+        else{
+
+       
 
         for(let i=0; i<info.length; i++){
             characters += `<li class="elementos_hijos">
                                 <a class="boton_peli" href="./detail-movie.html?id=${info[i].id}"><img class="amg"src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="poster path movie"></a>
                                 <a class="botones_titulos" href="./detail-movie.html?id=${info[i].id}"><p class="botones_titulos">${info[i].title}</p></a>
                             </li>`
-        }
+        } }
         container.innerHTML = characters;
 
         
@@ -46,14 +53,19 @@ fetch(url)
         let container = document.querySelector('.lista_elementos_4');
         let characters = '';
 
-        for(let i=0; i<info.length; i++){
-            characters += `<li class="elementos_hijos">
-                                <a class="boton_peli" href="./detail-serie.html?id=${info[i].id}"><img class="amg"src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="poster path movie"></a>
-                                <a class="botones_titulos" href="./detail-serie.html?id=${info[i].id}"><p class="botones_titulos">${info[i].name}</p></a>
-                            </li>`
+        if(data.results.lenght==0){
+            container.innerHTML `no hay resultado para su búsqueda`
         }
-        container.innerHTML = characters;
+        else{
 
+            for(let i=0; i<info.length; i++){
+                characters += `<li class="elementos_hijos">
+                                    <a class="boton_peli" href="./detail-serie.html?id=${info[i].id}"><img class="amg"src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="poster path movie"></a>
+                                    <a class="botones_titulos" href="./detail-serie.html?id=${info[i].id}"><p class="botones_titulos">${info[i].name}</p></a>
+                                </li>`
+            }
+        container.innerHTML = characters;
+    }
         
     })
         
