@@ -35,31 +35,32 @@ fetch(url_posta)
                         `
         izq.innerHTML=contenedor_1;
         der.innerHTML=contenedor_2;
+    })
 
 
-        let arr = JSON.parse(localStorage.getItem("id"));
-        console.log(arr);
-        if (arr == null) arr = [];
-    
-        
-    
-        let peliculas = [`${detalles.id}`]
-         
-    
-        arr.push(peliculas);
-        
-        let botonFavorites = document.getElementById("botonFavorites");
-    botonFavorites.addEventListener("click", () => agregarFavorito());
+let favoritos=[];
+let storage=localStorage.getItem('favoritos');
+if (storage!= null){
+    favoritos=JSON.parse(storage);
+    console.log(favoritos)
+}
+let link = document.querySelector(".urls1")
 
-   
-
-    function agregarFavorito() {
-      localStorage.setItem("id", JSON.stringify(arr));
+if (favoritos.includes(id)){
+    link.innerText= "sacar de favoritos"
+};
+link.addEventListener('click', function(e){
+    e.preventDefault();
+    if (favoritos.includes(id)){
+        let indice = favoritos.indexOf(id);
+        favoritos.splice(indice, 1);
+        link.innerText="Agregar a favoritos"
+    } else {
+        favoritos.push(id);
+        console.log(favoritos)
+        link.innerText="sacar de favoritos"
     }
-    })
-   
-    
-    .catch(function(error){
-        console.log(error)
-    })
-    
+    let pelisfav= JSON.stringify(favoritos);
+    localStorage.setItem('favoritos', pelisfav);
+    console.log(localStorage)
+})

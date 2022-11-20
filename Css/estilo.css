@@ -524,3 +524,19 @@ margin-top: 5vh;
         display: none
     }
 }
+
+.logins3{
+    margin-right:3%;
+    color: #FF1776;
+    font-size: 130%;
+    font: 400 1rem/1.5625rem sans-serif;
+    border:1.7px solid #161647;
+    border-radius: 20px;
+    padding:0 20px;
+    height: 30px;
+    background-color: #161647;
+}
+.urls1{
+    color: #FF1776;
+    text-decoration: none;
+}
