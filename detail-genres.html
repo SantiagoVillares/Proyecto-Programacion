@@ -15,14 +15,18 @@
 <body>
     <div>
         <ul class="header1">
-            <li class="logins"><a class="urls"href="./search-results.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            <li class="buscador"><input class="buscador_"type="text" placeholder="Busca una pelicula" required></li>
+            <li class="buscador">
+                <form action="./search-results.html" method="get">
+                    <input class="buscador_"type="text" name="querys" value="" placeholder="Buscar">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </li>
             <li class="logins ult"><a class="urls">LOGIN</a></li>
             <li class="logins"><a class="urls" href="./genres.html">GENRES</a></li>
             <li class="logins"><a class="urls" href="./favorite.html">FAVORITES</a></li>
-            <li class="logins"><a class="urls" href="./index.html">HOME</a></li>
+            <li class="logins ult"><a class="urls">REGISTER</a></li>
         </ul>
-    </div>
+</div>
     <div class="logo">
         <img class="log"src="../Proyecto-Programacion/Imagenes/memovie.gif" alt="logo">
         <div>
@@ -48,12 +52,7 @@
                 <a  class= "boton_peli" href="./detail-movie.html">  <img class="amg"src="../Proyecto-Programacion/Imagenes/simpsons.webp" alt="Los Simpsons"> </a> 
                 <a class="botones_titulos"href="./detail-movie.html"><h2> LOS SIMPSONS</h2></a>
             </li>
-            <li class="buscador">
-                <form action="./search-results.html" method="get">
-                    <input class="buscador_"type="text" name="querys" value="" placeholder="Buscar">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </li>
+            
         </ul>
     </div>
     <script src="./javascript/search-results.js"></script>
