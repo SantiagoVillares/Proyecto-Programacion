@@ -23,7 +23,7 @@ function muestraFav (id){
     .then(function(data){
         console.log(data);
         escribir.innerHTML += ` <li class="listaf">
-                                     <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src=" ${data.imagen_Url}" alt=""></a>
+                                     <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data.poster_path} alt=""></a>
                                      <a class="botones_titulos"href="./detail-serie.html"><h2> ${data.title}</h2></a>
                                 </li>`
     })

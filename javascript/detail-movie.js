@@ -31,8 +31,7 @@ fetch(url_posta)
                         <p class="txt">Rating: ${detalles.vote_average}/10</p>
                         <p class="txt">Estreno: ${detalles.release_date}</p>
                         <p class="txt">Generos: <a> Te la debo, por ahora</a></p>
-                        <p class="txt">Lenguage: ${detalles.original_language}</p>
-                        `
+                        <p class="txt">Lenguage: ${detalles.original_language}</p> `
         izq.innerHTML=contenedor_1;
         der.innerHTML=contenedor_2;
     })
