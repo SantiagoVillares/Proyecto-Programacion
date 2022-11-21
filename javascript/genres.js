@@ -7,7 +7,7 @@ fetch(urlgen)
     })
     .then(function(data){
         console.log(data)
-        for(let i=0;i<data.genres.lenght;i++)
+        for(let i=0;i<data.genres.length;i++)
         {
             let info=data.genres[i].name
             listagen.innerHTML += `<article class="gen_lista">
