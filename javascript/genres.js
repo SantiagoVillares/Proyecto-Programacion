@@ -7,6 +7,17 @@ fetch(urlgen)
     })
     .then(function(data){
         console.log(data)
-        for()
-
+        for(let i=0;i<data.genres.lenght;i++)
+        {
+            let info=data.genres[i].name
+            listagen.innerHTML += `<article class="gen_lista">
+            <a class="getnum" href="./detail-genres.html?id=${data.genres[i].id}">${genero}</a>
+            </article>`
+        }
+        console.log(data);
+        return data
     })
+    .catch(function(error){
+        return error
+    })
+
