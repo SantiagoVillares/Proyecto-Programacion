@@ -28,7 +28,7 @@ fetch(url)
 
         for(let i=0; i<info.length; i++){
             characters += `<li class="elementos_hijos">
-                                <a class="boton_peli" href="./detail-movie.html?id=${info[i].id}"><img class="amg"src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="poster path movie"></a>
+                                <a class="boton_peli" href="./detail-movie.html?id=${info[i].id}"><img class="amg"src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="${info[i].title}"></a>
                                 <a class="botones_titulos" href="./detail-movie.html?id=${info[i].id}"><p class="botones_titulos">${info[i].title}</p></a>
                             </li>`
         } }
