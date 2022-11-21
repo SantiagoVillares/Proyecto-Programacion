@@ -35,3 +35,32 @@ fetch(serie)
     .catch(function(error){
         console.log(error)
     })
+
+    let favoritos=[];
+    let storage=localStorage.getItem('favoritos');
+    if (storage!= null){
+        favoritos=JSON.parse(storage);
+        console.log(favoritos)
+    }
+    let link = document.querySelector(".urls1")
+    
+    if (favoritos.includes(id)){
+        link.innerText= "sacar de favoritos"
+    };
+    link.addEventListener('click', function(e){
+        e.preventDefault();
+        if (favoritos.includes(id)){
+            let indice = favoritos.indexOf(id);
+            favoritos.splice(indice, 1);
+            link.innerText="AGREGAR A FAVORITOS"
+        } else {
+            favoritos.push(id);
+            console.log(favoritos)
+            link.innerText="ELIMINAR DE FAVORITOS"
+        }
+        let pelisfav= JSON.stringify(favoritos);
+        localStorage.setItem('favoritos', pelisfav);
+        console.log(localStorage)
+    })
+    
+    

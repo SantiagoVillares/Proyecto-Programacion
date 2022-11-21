@@ -541,3 +541,9 @@ margin-top: 5vh;
     text-decoration: none;
     background-color: #161647;
 }
+.lista_deseries{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
