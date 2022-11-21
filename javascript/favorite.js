@@ -63,10 +63,10 @@ function muestraSeries (id){
         return response1.json();
     })
     .then(function(data1){
-        console.log(data);
+        console.log(data1);
         edicion.innerHTML += ` <li class="listaf">
-        <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data.poster_path} alt=""></a>
-        <a class="botones_titulos"href="./detail-serie.html"><h2> ${data.name}</h2></a>
+        <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data1.poster_path} alt=""></a>
+        <a class="botones_titulos"href="./detail-serie.html"><h2> ${data1.name}</h2></a>
         
    </li>`
     })
