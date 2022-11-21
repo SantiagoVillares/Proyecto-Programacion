@@ -36,30 +36,30 @@ fetch(serie)
         console.log(error)
     })
 
-    let favoritos=[];
-    let storage=localStorage.getItem('favoritos');
-    if (storage!= null){
-        favoritos=JSON.parse(storage);
-        console.log(favoritos)
+    let favoritoSeries=[];
+    let storageSeries=localStorage.getItem('favoritoSeries');
+    if (storageSeries!= null){
+        favoritoSeries=JSON.parse(storageSeries);
+        console.log(favoritoSeries)
     }
     let link = document.querySelector(".urls1")
     
-    if (favoritos.includes(id)){
+    if (favoritoSeries.includes(id)){
         link.innerText= "sacar de favoritos"
     };
     link.addEventListener('click', function(e){
         e.preventDefault();
-        if (favoritos.includes(id)){
-            let indice = favoritos.indexOf(id);
-            favoritos.splice(indice, 1);
+        if (favoritoSeries.includes(id)){
+            let indice = favoritoSeries.indexOf(id);
+            favoritoSeries.splice(indice, 1);
             link.innerText="AGREGAR A FAVORITOS"
         } else {
-            favoritos.push(id);
-            console.log(favoritos)
+            favoritoSeries.push(id);
+            console.log(favoritoSeries)
             link.innerText="ELIMINAR DE FAVORITOS"
         }
-        let pelisfav= JSON.stringify(favoritos);
-        localStorage.setItem('favoritos', pelisfav);
+        let seriesfav= JSON.stringify(favoritoSeries);
+        localStorage.setItem('favoritoSeries', seriesfav);
         console.log(localStorage)
     })
     
