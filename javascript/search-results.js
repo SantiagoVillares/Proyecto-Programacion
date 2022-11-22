@@ -3,8 +3,6 @@ let stringToObject = new URLSearchParams(query); //La trasnformo en OL
 
 let aBuscar = stringToObject.get('querys'); //Obtengo los datos de una propiedad con get()
 
-
-
 let url = `https://api.themoviedb.org/3/search/movie?query=${aBuscar}&api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&page=1&include_adult=false`
 let url2=`https://api.themoviedb.org/3/search/tv?query=${aBuscar}&api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&page=1&include_adult=false`
 fetch(url)
@@ -50,9 +48,9 @@ fetch(url)
         let info = data.results
         let container = document.querySelector('.lista_elementos_4');
         let characters = '';
-
-        if(data.results.length==0){
-            container.innerHTML `no hay resultado para su búsqueda`
+        console.log(info)
+        if(info.length==0){
+            container.innerHTML= `no hay resultado para su búsqueda`
         }
         else{
 
@@ -70,4 +68,3 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
-

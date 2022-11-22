@@ -47,8 +47,20 @@ fetch(agre_elementos_tv)
     })
 
 
+    let formulario=document.querySelector('form')
+    let busq=document.querySelector('.buscador')
+    let error=document.querySelector('.error_form')
+    condicional.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if(busq.value.length == "" ){
+            alert ("Que deseas buscar?")
+        }else if(busq.value.length <= 2){
+            alert ('Por favor, ingrese al menos 3 caracteres')
+        } else{
+            formulario.submit()
+        }
+        
+    })
     
-    function login(){
-       let user=document.getElementById("usuario").value;
-       let pass=document.getElementById("contraseña").value;
-    }
+
+
