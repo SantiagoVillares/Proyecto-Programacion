@@ -8,8 +8,8 @@ let serie=`https://api.themoviedb.org/3/tv/${id}?api_key=2a3601e42fea0b8cec36fb4
 let movies=`https://api.themoviedb.org/3/movie/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`   
 let imag = document.querySelector('.menu')
 let titulo=document.querySelector('.titulo_seccion')
-let url_detalle_gen=`https://api.themoviedb.org/3/discover/movie?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate&with_genres=${id}`;
-        fetch(url)
+let url_detalle_gen=`https://api.themoviedb.org/3/discover/movie?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${id}&with_watch_monetization_types=flatrate`
+        fetch(url_detalle_gen)
             .then(function(response){
                 return response.json();
              })
@@ -17,10 +17,13 @@ let url_detalle_gen=`https://api.themoviedb.org/3/discover/movie?api_key=2a3601e
                 console.log(data)
                 let listaGeneros = data.results
                 console.log(listaGeneros);
+                let imag = document.querySelector('.lista_elementos_5')
+                let titulo=document.querySelector('.titulo_seccion')
+                let escritura=''
                 
                 
-                for(let i = 0; i<8; i++){
-                    imag+=
+                for(let i = 0; i<4; i++){
+                    escritura+=
 
                     `<article class="cajas">
                              <a href="./detail-movie.html?idPelicula=${listaGeneros[i].id}"><img  class= "pelis" src="https://image.tmdb.org/t/p/w500/${listaGeneros[i].poster_path}" alt=""></a>
@@ -32,6 +35,8 @@ let url_detalle_gen=`https://api.themoviedb.org/3/discover/movie?api_key=2a3601e
                      
                 
                 }
+                imag.innerHTML=escritura
+
                 
              })
     
