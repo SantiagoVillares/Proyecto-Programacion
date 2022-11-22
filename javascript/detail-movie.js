@@ -40,14 +40,45 @@ fetch(proveedores)
     .then(function(repro){
         let hub= repro.results
         
-        let selector = document.querySelector(".providers")
+        let selector = document.querySelector(".izquierda")
         let st_rep= ""
         for(i=0;i<hub.length;i++){
             
-            st_rep+= `<a class="botones_titulos" href=${hub.link[i]}><p class="botones_titulos">${repro[i]}</p></a>`
+            st_rep+= `<a class="botones_titulos" href=${hub[i].link}><p class="botones_titulos">${repro[i]}</p></a>`
         }
         console.log(st_rep)
         selector.innerHTML=st_rep;
+    })
+let api_reco= `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&page=1`
+let bt_reco= document.querySelector(".bt_recomiendo");
+let show_reco= document.querySelector(".recomiendo");
+//ahora hacemos el evento del boton
+bt_reco.addEventListener("click", function(){
+    if(show_reco.style.display !="flex"){
+        show_reco.style.display= "flex"
+        bt_reco.innerText= "Ocultar recomendaciones"
+    }
+    else {
+        show_reco.style.display= "none"
+        bt_reco.innerText= "Ver recomendaciones"
+    }
+})
+fetch(api_reco)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(centro){
+        console.log(centro)
+        let reco= document.querySelector(".lista_elementos_7")
+        let resultadoss= centro.results;
+        let string="";
+        for(let i=0;i<5;i++){
+            string += `<li class="elementos_hijos">
+                        <a class="boton_peli" href="./detail-movie.html?id=${resultadoss[i].id}"><img class="amg" src="https://image.tmdb.org/t/p/w500/${resultadoss[i].poster_path}" alt="Error" /></a>
+                        <a class="botones_titulos" href="./detail-movie.html?id=${resultadoss[i].id}"><p>${resultadoss[i].title}</p></a>
+                        </li>`
+        }
+        reco.innerHTML=string
     })
 
 let favoritos=[];

@@ -32,7 +32,17 @@ body
     width: 50%;
     margin-top:7vh ;
     border-radius: 15px;
+    background-color: aqua
 }
+.abajo{
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    border-radius: 15px;
+    border: solid 6px #161647;
+    background-color: aqua;
+}
+
 .foto_detalles{
     border:solid 6px #FF1776;
     border-radius: 15px;
@@ -76,12 +86,39 @@ body
     color: white;
     font-size: 18px;
 }
+.recomiendo{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 98vw;
+    margin-top: 14vh;
+
+}
+.bt_recomiendo{
+    margin-right:3%;
+    color: #FF1776;
+    font-size: 160%;
+    font: 400 1rem/1.5625rem sans-serif;
+    border:1.7px solid #FF1776;
+    border-radius: 20px;
+    padding:0 20px;
+    height: 60px;
+    background-color: #161647;
+}
+.lista_elementos_7{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /*Fin css detalles de serie y peliculas*/
 /*Comienzo css index*/
 .estrenos{
     color: white;
     text-align: center;
 }
+
 .menu
 {
 display: flex;
