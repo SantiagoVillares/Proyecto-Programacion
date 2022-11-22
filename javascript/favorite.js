@@ -26,8 +26,8 @@ function muestraFav (id){
     .then(function(data){
         console.log(data);
         escribir.innerHTML += ` <li class="elementos_hijos">
-                                     <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data.poster_path} alt=""></a>
-                                     <a class="botones_titulos"href="./detail-serie.html"><h2> ${data.title}</h2></a>
+                                     <a  class= "boton_peli" href="./detail-movie.html?id=${data.id}"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data.poster_path} alt=""></a>
+                                     <a class="botones_titulos" href="./detail-movie.html?id=${data.id}"> <h2> ${data.title}</h2></a>
                                      
                                 </li>`
     })
@@ -65,11 +65,11 @@ function muestraSeries (id1){
     })
     .then(function(data1){
         console.log(data1);
-        edicion.innerHTML += ` <li class="elementos_hijos">
-        <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data1.poster_path} alt=""></a>
-        <a class="botones_titulos"href="./detail-serie.html"><h2> ${data1.name}</h2></a> 
-   </li>`
-   console.log(data1);
+        edicion.innerHTML += `<li class="elementos_hijos">
+                                  <a  class= "boton_peli" href="./detail-serie.html?id=${data1.id}"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data1.poster_path} alt=""></a>
+                                  <a class="botones_titulos"href="./detail-serie.html?id=${data1.id}"><h2> ${data1.name}</h2></a> 
+                              </li>`
+   
     })
     .catch(function(e){
         console.log(e);

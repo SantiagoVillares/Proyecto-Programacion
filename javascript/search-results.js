@@ -48,9 +48,9 @@ fetch(url)
         let info = data.results
         let container = document.querySelector('.lista_elementos_4');
         let characters = '';
-
-        if(data.results.length==0){
-            container.innerHTML `no hay resultado para su búsqueda`
+        console.log(info)
+        if(info.length==0){
+            container.innerHTML= `no hay resultado para su búsqueda`
         }
         else{
 
