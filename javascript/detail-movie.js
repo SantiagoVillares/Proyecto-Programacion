@@ -46,7 +46,7 @@ if (storage!= null){
 let link = document.querySelector(".urls1")
 
 if (favoritos.includes(id)){
-    link.innerText= "sacar de favoritos"
+    link.innerText= "ELIMINAR DE FAVORITOS"
 };
 link.addEventListener('click', function(e){
     e.preventDefault();
