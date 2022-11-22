@@ -47,19 +47,20 @@ fetch(agre_elementos_tv)
     })
 
 
-    let formulario=document.querySelector('buscador_')
-    let busq=document.querySelector('querys')
-    condicional.addEventListener('submit', function (e) {
-        e.preventDefault();
-        if(busq.value.length == "" ){
-            alert ("Que deseas buscar?")
-        }else if(busq.value.length <= 2){
-            alert ('Por favor, ingrese al menos 3 caracteres')
-        } else{
-            this.submit()
-          }
+    // // let formulario=document.querySelector('form')
+    // let busq=document.querySelector('.buscador')
+    // let error=document.querySelector('.error')
+    // condicional.addEventListener('submit', function (e) {
+    //     e.preventDefault();
+    //     if(busq.value.length == "" ){
+    //         alert ("Que deseas buscar?")
+    //     }else if(busq.value.length <= 2){
+    //         alert ('Por favor, ingrese al menos 3 caracteres')
+    //     } else{
+    //         formulario.submit()
+    //     }
         
-    })
+    // })
     
 
 
