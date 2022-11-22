@@ -18,9 +18,11 @@ fetch(url)
         let factos= 'Se busco: ';
         let final= factos + `${aBuscar}`
         titulo.innerHTML = final
+        
         if(data.results===''){
             container.innerHTML `no hay resultado para su búsqueda`
         }
+        
 
         else{
 
