@@ -147,6 +147,9 @@ margin-top: 14vh;
     font: 400 1rem/1.5625rem sans-serif;
     font-size: 15px;
 }
+.botones_titulos:hover{
+    color: #FF1776;
+}
 
 /*Fin css index*/
 
@@ -245,6 +248,7 @@ margin-top: 14vh;
     height: 30px;
     background-color: #161647;
 }
+
 .logo
 {
     display: flex;
@@ -288,10 +292,34 @@ footer
     margin: 60px;
 }
 
+/* Inicio css detalle generos*/
 
 
+/* Fin css detalle generos*/
 
 /* comienzo generos*/
+.listado_pelis{
+    columns: 4;
+    list-style: none;
+    
+}
+.listado_series{
+    columns: 4;
+    list-style: none;
+    
+}
+.botones_generos{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font: 400 1rem/1.5625rem sans-serif;
+    font-size: 18px;
+}
+.botones_generos:hover{
+    color: #FF1776;
+}
+/* fin generos*/
+
 .cont
 {
 display: flex;
