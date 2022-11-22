@@ -19,8 +19,8 @@ fetch(url)
         let final= factos + `${aBuscar}`
         titulo.innerHTML = final
         
-        if(data.results===''){
-            container.innerHTML `no hay resultado para su búsqueda`
+        if(final===''){
+            alert('no hay resultado para su búsqueda') 
         }
         
 
