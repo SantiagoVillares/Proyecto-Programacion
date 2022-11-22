@@ -52,8 +52,8 @@ if (series == null || series.length==0){
     }
 }
 
-function muestraSeries (id){
-    let urlser = `https://api.themoviedb.org/3/tv/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
+function muestraSeries (id1){
+    let urlser = `https://api.themoviedb.org/3/tv/${id1}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
     
     fetch(urlser)
     .then(function(response1){
@@ -64,6 +64,7 @@ function muestraSeries (id){
         edicion.innerHTML += ` <li class="listaf">
         <a  class= "boton_peli" href="./detail-serie.html"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data1.poster_path} alt=""></a>
         <a class="botones_titulos"href="./detail-serie.html"><h2> ${data1.name}</h2></a>
+        
         
    </li>`
     })

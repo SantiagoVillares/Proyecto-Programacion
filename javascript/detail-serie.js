@@ -15,8 +15,7 @@ fetch(serie)
         let contenedor_2=""
         contenedor_1+=`<h1 class="titulo">${detail.name}</h1>
                         <img class="foto_detalles" src=https://image.tmdb.org/t/p/w500/${detail.poster_path} alt="Error"/>
-                        <h2 class="slogan_txt">${detail.tagline}</h2>
-                        <button class ='logins'> favorito</button>`
+                        <h2 class="slogan_txt">${detail.tagline}</h2>`
 
         contenedor_2+=`<h2 class="subtitulo">Datos Importantes</h2>
                         <h2 class="subtitulo">Resumen</h2>
