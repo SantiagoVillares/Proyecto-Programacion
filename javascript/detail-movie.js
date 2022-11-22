@@ -1,4 +1,5 @@
 let qs= location.search;
+console.log(qs);
 let qsto= new URLSearchParams(qs);
 let id= qsto.get("id");
 let url_posta=`https://api.themoviedb.org/3/movie/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`

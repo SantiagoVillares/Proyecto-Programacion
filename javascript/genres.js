@@ -12,12 +12,12 @@ fetch(url_series)
         let ar= ""
         let listado= document.querySelector(".listado_series")
         for(let i=0;i<genes.length;i++)
-        {ar+=`<li class="elementos_genero"><a class="botones_generos" href="./detail-genres.html?=${genes[i].id}">${genes[i].name}</a></li>`
-
+        {ar+=`<li class="elementos_genero"><a class="botones_generos" href="./detail-genres.html?id=${genes[i].id}">${genes[i].name}</a></li>`
+        
         }
         listado.innerHTML=ar
         console.log(data);
-        
+        console.log(ar);
     })
     .catch(function(error){
         console.log(error);
