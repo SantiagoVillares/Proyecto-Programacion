@@ -52,7 +52,7 @@ fetch(agre_elementos_tv)
     let error=document.querySelector('.error_form')
     condicional.addEventListener('submit', function (e) {
         e.preventDefault();
-        if(busq.value.length == "" ){
+        if(busq.value.length == 0 ){
             alert ("Que deseas buscar?")
         }else if(busq.value.length <= 2){
             alert ('Por favor, ingrese al menos 3 caracteres')
