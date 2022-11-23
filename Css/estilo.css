@@ -374,16 +374,15 @@ justify-content:flex-start;
 flex-direction: row;
 margin-top: 5vh;
 }
-.lista_genero
-{   color: #FF1776;
-    font: 400 1rem/1.5625rem sans-serif;
-    font-style: italic;
+.lista_elementos_7{
     display: flex;
-    flex-wrap: nrap;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-items: center;
+    justify-content: space-around;
 }
-.genero_serie
+
+
+/* .genero_serie
 {
     color:#FF1776 ; 
     font: 400 1rem/1.5625rem sans-serif;
@@ -393,7 +392,7 @@ margin-top: 5vh;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
     text-align:left;
     margin-left: 15vh;
-}
+} */
 
 .letra 
 {
@@ -404,32 +403,9 @@ margin-top: 5vh;
 
 
 }
-.lista_des
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    
-}
 
-.cajaizq 
-{
-    
-    display: flex;
-    width:50vw;
-    height: 80vw;
-    flex-direction: column;
-    border-right:solid 6px #FF1776;
-}
-.cajader
-{
-    
-    display: flex;
-    width: 50vw;
-    height: 80vw;
-    flex-direction: column;
-}
+
+
 .com
 {
     display: flex;
@@ -523,10 +499,7 @@ margin-top: 5vh;
     {
         font-size: 3px;
     }
-    .lista_des
-    {
-        flex-direction: column;
-    }
+   
 }
 @media(max-width: 1000px)
 {
@@ -578,14 +551,4 @@ margin-top: 5vh;
     {
         display: none
     }
-}
-
-.titulos_seccion_genre
-{
-    text-align: center;
-    color: #FF1776;
-    font: 400 1rem/1.5625rem sans-serif;
-    margin-bottom: 7vh;
-    font-size: 300%;
-    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
 }
