@@ -11,6 +11,8 @@ fetch(url_series)
         console.log(genes)
         let ar= ""
         let listado= document.querySelector(".listado_series")
+        let aver= genes.title
+        console.log(aver)
         for(let i=0;i<genes.length;i++)
         {ar+=`<li class="elementos_genero"><a class="botones_generos" href=./detail-genres.html?id=${genes[i].id}&name=${genes[i].name}&type=serie> ${genes[i].name}</a></li>`
         

@@ -46,6 +46,46 @@ if (type=='pelicula'){
 
 
 
+} else {
+    if (type=='serie'){
+        fetch(url_detalle_series)
+        .then(function(response){
+            return response.json();
+         })
+         .then(function(datas){
+            console.log(datas)
+            let listaGenSer = datas.results
+            console.log(listaGenSer);
+    
+            let imag = document.querySelector('.lista_elementos_genre')
+            let titulo=document.querySelector('.titulo_seccion1')
+            let escritura=''
+            let titulo1 = ''
+            
+            titulo1+= `Peliculas de: ${listaGenSer.genre}`
+            for(let i = 0; i<listaGenSer.length; i++){
+                let preueba = listaGenSer[i].title
+                console.log(preueba)
+                escritura+=
+    
+                `  <li class="elementos_hijos">
+                        <a class="boton_peli" href="./detail-movie.html?id=${listaGenSer[i].id}"><img class="amg" src=https://image.tmdb.org/t/p/w500/${listaGenSer[i].poster_path} alt="Error" /></a>
+                        <a class="botones_titulos" href="./detail-movie.html?id=${listaGenSer[i].id}"><p>${listaGenSer[i].name}</p></a>
+                        
+                    </li>`
+    
+            }
+            imag.innerHTML=escritura
+            titulo.innerHTML=titulo1
+            console.log(escritura)
+            console.log(titulo1)
+    
+            
+         })
+    
+    
+    
+    }
 }
        
     
