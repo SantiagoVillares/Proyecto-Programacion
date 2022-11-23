@@ -13,6 +13,7 @@ body
     height: 120vh;
     border-radius: 15px;
     border: solid 6px #161647;
+    margin-bottom: 10vh;
 }
 .izq{
     
@@ -42,6 +43,7 @@ body
 }
 .generos{
     margin-bottom: 10vh;
+    margin-top: 20vh;
 }
 
 
