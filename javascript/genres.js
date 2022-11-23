@@ -38,7 +38,6 @@ fetch(url_pelis)
         }
         listado_1.innerHTML=arr
         console.log(data);
-        
     })
     .catch(function(error){
         console.log(error);

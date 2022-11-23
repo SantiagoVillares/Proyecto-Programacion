@@ -80,6 +80,9 @@ fetch(api_reco)
         }
         reco.innerHTML=string
     })
+    .catch(function(error){
+        console.log(error)
+    })
 
 let favoritos=[];
 let storage=localStorage.getItem('favoritos');

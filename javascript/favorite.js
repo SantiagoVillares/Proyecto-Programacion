@@ -1,3 +1,4 @@
+
 let storagepelis = localStorage.getItem('favoritos');
 console.log(storagepelis)
 
