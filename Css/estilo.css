@@ -54,12 +54,6 @@ body
     width: 90%;
     margin-left: 5%;
 }
-.slogan_txt{
-    color: #FF1776;
-    font-family: 'Sono', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-}
 .titulo
 {
     display: flex;
@@ -111,12 +105,7 @@ body
     height: 60px;
     background-color: #161647;
 }
-.lista_elementos_7{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 
 /*Fin css detalles de serie y peliculas*/
 /*Comienzo css index*/
