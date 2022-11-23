@@ -1,5 +1,4 @@
 let qs= location.search;
-console.log(qs)
 let qsto = new URLSearchParams(qs);
 let id= qsto.get("id");
 let serie= `https://api.themoviedb.org/3/tv/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
@@ -53,8 +52,7 @@ fetch(serie)
             let indice = favoritoSeries.indexOf(id);
             favoritoSeries.splice(indice, 1);
             link.innerText="AGREGAR A FAVORITOS"
-        } 
-        else {
+        } else {
             favoritoSeries.push(id);
             console.log(favoritoSeries)
             link.innerText="ELIMINAR DE FAVORITOS"
