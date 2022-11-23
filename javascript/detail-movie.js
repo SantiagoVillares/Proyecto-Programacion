@@ -14,8 +14,11 @@ fetch(url_posta)
         console.log(detalles)
         let izq= document.querySelector(".izq");
         let der= document.querySelector(".der");
-        let contenedor_1=""
-        let contenedor_2=""
+        let gen= document.querySelector(".lista_elementos_8");
+        let generos=detalles.genres
+        let cont_gen="";
+        let contenedor_1="";
+        let contenedor_2="";
         contenedor_1+=`<h1 class="titulo">${detalles.title}</h1>
                         <img class="foto_detalles" src=https://image.tmdb.org/t/p/w500/${detalles.poster_path} alt="Error"/>
                         <h2 class="slogan_txt">${detalles.tagline}</h2>
@@ -27,9 +30,12 @@ fetch(url_posta)
                         <p class="txt">Rating: ${detalles.vote_average}/10</p>
                         <p class="txt">Estreno: ${detalles.release_date}</p>
                         <p class="txt">Duracion: ${detalles.runtime}</p>
-                        <p class="txt">Generos: <a> Te la debo, por ahora</a></p>
                         <p class="txt">Lenguage: ${detalles.original_language}</p>
                         `
+        for(i=0; i<generos.length;i++){
+            cont_gen+= `<li class="txt"> ${generos[i].name} </li>`
+        }
+        gen.innerHTML=cont_gen
         izq.innerHTML=contenedor_1;
         der.innerHTML=contenedor_2;
     })
