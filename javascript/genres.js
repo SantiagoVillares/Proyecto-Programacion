@@ -12,7 +12,7 @@ fetch(url_series)
         let ar= ""
         let listado= document.querySelector(".listado_series")
         for(let i=0;i<genes.length;i++)
-        {ar+=`<li class="elementos_genero"><a class="botones_generos" href="./detail-genres.html?id=${genes[i].id}">${genes[i].name}</a></li>`
+        {ar+=`<li class="elementos_genero"><a class="botones_generos" href=./detail-genres.html?id=${genes[i].id}&name=${genes[i].name}&type=serie> ${genes[i].name}</a></li>`
         
         }
         listado.innerHTML=ar
@@ -33,11 +33,12 @@ fetch(url_pelis)
         let arr= ""
         let listado_1= document.querySelector(".listado_pelis")
         for(let i=0;i<genesis.length;i++)
-        {arr+=`<li class="elementos_genero"><a class="botones_generos" href="./detail-genres.html?=${genesis[i].id}">${genesis[i].name}</a></li>`
-
-        }
+        {
+            arr+=`<li class="elementos_genero"><a class="botones_generos" href=./detail-genres.html?id=${genesis[i].id}&name=${genesis[i].name}&type=pelicula>${genesis[i].name}</a></li>`
+    }
         listado_1.innerHTML=arr
-        console.log(data);
+        console.log(data_1);
+        console.log(arr)
     })
     .catch(function(error){
         console.log(error);
