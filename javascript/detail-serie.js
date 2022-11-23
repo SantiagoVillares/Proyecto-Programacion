@@ -1,5 +1,4 @@
 let qs= location.search;
-console.log(qs)
 let qsto = new URLSearchParams(qs);
 let id= qsto.get("id");
 let serie= `https://api.themoviedb.org/3/tv/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
@@ -35,7 +34,40 @@ fetch(serie)
     .catch(function(error){
         console.log(error)
     })
-
+    let api_reco=` https://api.themoviedb.org/3/tv/${id}/recommendations?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&page=1`
+    let bt_reco= document.querySelector(".bt_recomiendo");
+    let show_reco= document.querySelector(".recomiendo");
+    //ahora hacemos el evento del boton
+    bt_reco.addEventListener("click", function(){
+        if(show_reco.style.display !="flex"){
+            show_reco.style.display= "flex"
+            bt_reco.innerText= "Ocultar recomendaciones"
+        }
+        else {
+            show_reco.style.display= "none"
+            bt_reco.innerText= "Ver recomendaciones"
+        }
+    })
+    fetch(api_reco)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(centro){
+        console.log(centro)
+        let reco= document.querySelector(".lista_elementos_7")
+        let resultadoss= centro.results;
+        let string="";
+        for(let i=0;i<5;i++){
+            string += `<li class="elementos_hijos">
+                        <a class="boton_peli" href="./detail-serie.html?id=${resultadoss[i].id}"><img class="amg" src="https://image.tmdb.org/t/p/w500/${resultadoss[i].poster_path}" alt="Error" /></a>
+                        <a class="botones_titulos" href="./detail-serie.html?id=${resultadoss[i].id}"><p>${resultadoss[i].name}</p></a>
+                        </li>`
+        }
+        reco.innerHTML=string
+    })
+    .catch(function(error){
+        console.log(error)
+    })
     let favoritoSeries=[];
     let storageSeries=localStorage.getItem('favoritoSeries');
     if (storageSeries!= null){
@@ -53,8 +85,7 @@ fetch(serie)
             let indice = favoritoSeries.indexOf(id);
             favoritoSeries.splice(indice, 1);
             link.innerText="AGREGAR A FAVORITOS"
-        } 
-        else {
+        } else {
             favoritoSeries.push(id);
             console.log(favoritoSeries)
             link.innerText="ELIMINAR DE FAVORITOS"

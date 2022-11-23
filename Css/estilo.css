@@ -10,10 +10,10 @@ body
 .contenedor_general{
     display: flex;
     flex-direction: row;
-    height: 150vh;
+    height: 120vh;
     border-radius: 15px;
     border: solid 6px #161647;
-
+    margin-bottom: 10vh;
 }
 .izq{
     
@@ -32,16 +32,20 @@ body
     width: 50%;
     margin-top:7vh ;
     border-radius: 15px;
-    background-color: aqua
+
 }
 .abajo{
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    height: 100vh;
     border-radius: 15px;
     border: solid 6px #161647;
-    background-color: aqua;
 }
+.generos{
+    margin-bottom: 10vh;
+    margin-top: 20vh;
+}
+
 
 .foto_detalles{
     border:solid 6px #FF1776;
@@ -85,6 +89,7 @@ body
     font-weight: 300;
     color: white;
     font-size: 18px;
+    list-style: none;
 }
 .recomiendo{
     display: none;
@@ -110,15 +115,15 @@ body
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 /*Fin css detalles de serie y peliculas*/
 /*Comienzo css index*/
 .estrenos{
     color: white;
     text-align: center;
 }
-
 .menu
 {
 display: flex;
