@@ -53,7 +53,8 @@ fetch(serie)
             let indice = favoritoSeries.indexOf(id);
             favoritoSeries.splice(indice, 1);
             link.innerText="AGREGAR A FAVORITOS"
-        } else {
+        } 
+        else {
             favoritoSeries.push(id);
             console.log(favoritoSeries)
             link.innerText="ELIMINAR DE FAVORITOS"
