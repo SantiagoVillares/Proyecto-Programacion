@@ -1,11 +1,9 @@
 let q=location.search
 let qsto= new URLSearchParams(q)
-
 let id=qsto.get('id')
-console.log(id)
 let type= qsto.get('type');
 let name1 =qsto.get('name')
-console.log(name1)
+
 let url_detalle_gen=`https://api.themoviedb.org/3/discover/movie?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${id}&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0`
 
 let url_detalle_series= `https://api.themoviedb.org/3/discover/tv?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${id}&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0`
@@ -16,9 +14,8 @@ if (type=='pelicula'){
         return response.json();
      })
      .then(function(data){
-        console.log(data)
         let listaGeneros = data.results
-        console.log(listaGeneros);
+        
 
         let imag = document.querySelector('.lista_elementos_genre')
         let titulo=document.querySelector('.titulo_seccion1')
@@ -38,8 +35,7 @@ if (type=='pelicula'){
         }
         imag.innerHTML=escritura
         titulo.innerHTML=titulo1
-        console.log(escritura)
-        console.log(titulo1)
+        
 
         
      })
@@ -47,16 +43,15 @@ if (type=='pelicula'){
 
 
 } else {
-    if (type=='serie'){
+    
         fetch(url_detalle_series)
         .then(function(response){
             return response.json();
          })
          .then(function(datas){
             console.log(datas)
+            
             let listaGenSer = datas.results
-            console.log(listaGenSer);
-    
             let imag = document.querySelector('.lista_elementos_genre')
             let titulo=document.querySelector('.titulo_seccion1')
             let escritura=''
@@ -64,8 +59,7 @@ if (type=='pelicula'){
             
             titulo1+= `Peliculas de: ${listaGenSer.genre}`
             for(let i = 0; i<listaGenSer.length; i++){
-                let preueba = listaGenSer[i].title
-                console.log(preueba)
+               
                 escritura+=
     
                 `  <li class="elementos_hijos">
@@ -77,15 +71,14 @@ if (type=='pelicula'){
             }
             imag.innerHTML=escritura
             titulo.innerHTML=titulo1
-            console.log(escritura)
-            console.log(titulo1)
+            
     
             
          })
     
     
     
-    }
+    
 }
        
     

@@ -72,7 +72,7 @@ fetch(serie)
     let storageSeries=localStorage.getItem('favoritoSeries');
     if (storageSeries!= null){
         favoritoSeries=JSON.parse(storageSeries);
-        console.log(favoritoSeries)
+        
     }
     let link = document.querySelector(".urls1")
     
@@ -87,7 +87,6 @@ fetch(serie)
             link.innerText="AGREGAR A FAVORITOS"
         } else {
             favoritoSeries.push(id);
-            console.log(favoritoSeries)
             link.innerText="ELIMINAR DE FAVORITOS"
         }
         let seriesfav= JSON.stringify(favoritoSeries);
