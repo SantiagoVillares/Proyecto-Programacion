@@ -1,4 +1,4 @@
-let q=location.search
+let q=location.search//Obtengo la QS
 let qsto= new URLSearchParams(q)
 let id=qsto.get('id')
 let type= qsto.get('type');

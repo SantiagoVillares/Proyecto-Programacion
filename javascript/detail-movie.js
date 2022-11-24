@@ -1,5 +1,4 @@
 let qs= location.search;
-console.log(qs);
 let qsto= new URLSearchParams(qs);
 let id= qsto.get("id");
 let url_posta=`https://api.themoviedb.org/3/movie/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
@@ -52,7 +51,7 @@ fetch(proveedores)
             
             st_rep+= `<a class="botones_titulos" href=${hub[i].link}><p class="botones_titulos">${repro[i]}</p></a>`
         }
-        console.log(st_rep)
+        
         selector.innerHTML=st_rep;
     })
 let api_reco= `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US&page=1`
@@ -94,7 +93,7 @@ let favoritos=[];
 let storage=localStorage.getItem('favoritos');
 if (storage!= null){
     favoritos=JSON.parse(storage);
-    console.log(favoritos)
+    
 }
 let link = document.querySelector(".urls1")
 
@@ -109,11 +108,11 @@ link.addEventListener('click', function(e){
         link.innerText="AGREGAR A FAVORITOS"
     } else {
         favoritos.push(id);
-        console.log(favoritos)
+        
         link.innerText="ELIMINAR DE FAVORITOS"
     }
     let pelisfav= JSON.stringify(favoritos);
     localStorage.setItem('favoritos', pelisfav);
-    console.log(localStorage)
+    
 })
 

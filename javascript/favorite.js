@@ -1,9 +1,9 @@
 
 let storagepelis = localStorage.getItem('favoritos');
-console.log(storagepelis)
+
 
 let elegido = JSON.parse(storagepelis);
-console.log(elegido);
+
 
 let escribir= document.querySelector('.lista_pelis')
 
@@ -16,7 +16,6 @@ else {
         muestraFav(elegido[i])
     }
 }
-console.log(muestraFav)
 function muestraFav (id){
     let url = `https://api.themoviedb.org/3/movie/${id}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
 
@@ -39,11 +38,7 @@ function muestraFav (id){
 }
 
 let storageshows = localStorage.getItem('favoritoSeries');
-console.log(storageshows)
-
 let series = JSON.parse(storageshows);
-console.log(series);
-
 let edicion= document.querySelector('.lista_series')
 
 
@@ -55,7 +50,7 @@ else {
         muestraSeries(series[i])
     }
 }
-console.log(muestraSeries)
+
 
 function muestraSeries (id1){
     let urlser = `https://api.themoviedb.org/3/tv/${id1}?api_key=2a3601e42fea0b8cec36fb4c1999c023&language=en-US`
@@ -65,7 +60,7 @@ function muestraSeries (id1){
         return response1.json();
     })
     .then(function(data1){
-        console.log(data1);
+        
         edicion.innerHTML += `<li class="elementos_hijos">
                                   <a  class= "boton_peli" href="./detail-serie.html?id=${data1.id}"> <img class="amg"src= https://image.tmdb.org/t/p/w500/${data1.poster_path} alt=""></a>
                                   <a class="botones_titulos"href="./detail-serie.html?id=${data1.id}"><h2> ${data1.name}</h2></a> 
